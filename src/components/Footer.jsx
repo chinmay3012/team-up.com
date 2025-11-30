@@ -43,7 +43,21 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-text-muted">
-                    <p>&copy; {new Date().getFullYear()} TeamUp Inc. All rights reserved.</p>
+                    <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+                        <p>&copy; {new Date().getFullYear()} TeamUp Inc. All rights reserved.</p>
+                        <span className="hidden md:inline">•</span>
+                        <p>
+                            Empowered by{' '}
+                            <a
+                                href="https://chinmay3012.github.io/Portfolio/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-red-500 hover:text-red-400 transition-colors font-semibold"
+                            >
+                                Chinmay
+                            </a>
+                        </p>
+                    </div>
                     <div className="flex space-x-6 mt-4 md:mt-0">
                         <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
                         <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
